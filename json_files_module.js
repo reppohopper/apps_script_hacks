@@ -1,3 +1,6 @@
+// general apps script module code accessible at ...
+// https://github.com/reppohopper/apps_script_hacks/blob/main/json_files_module.js
+
 //        |         |         |         |         |         |         |         |(80)
 // Module by closure pattern: 
 // https://github.com/reppohopper/js_patterns/blob/main/modules_by_closure.md
