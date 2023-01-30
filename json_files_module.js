@@ -10,12 +10,14 @@ const json_files = (function json_files_module_loader () {
     );
   }
 
-// Replacer and space parameters can optionally be specified in the 2nd and 3rd 
+// Replacer and space parameters can optionally be specified in the 3rd and 4rd 
 // positions and they will be passed down directly to JSON.stringify. But it 
 // will default to pretty printing with indent "2".
   exp.overwrite_with_js_object = exp.overwrite = function (
-    js_object, replacer=undefined, space=2
+    file_id_in_drive, js_object, replacer=undefined, space=2
   ) {
-    our_json_file.setContent(JSON.stringify(object, replacer, space));
+    DriveApp.getFileById(file_id_in_drive).setContent(
+      JSON.stringify(object, replacer, space)
+    );
   }
 }());
