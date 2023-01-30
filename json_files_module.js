@@ -14,8 +14,8 @@ const json_files = (function json_files_module_loader () {
   }
 
 // Replacer and space parameters can optionally be specified in the 3rd and 4rd 
-// positions and they will be passed down directly to JSON.stringify. But it 
-// will default to pretty printing with indent "2".
+// positions and they will be passed down directly to JSON.stringify 2nd and 
+// 3rd positions. But it will default to pretty printing with indent "2".
   exp.overwrite_with_js_object = exp.overwrite = function (
     file_id_in_drive, js_object, replacer=undefined, space=2
   ) {
