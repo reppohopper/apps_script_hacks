@@ -8,6 +8,7 @@
  * 
  * DOCUMENTATION: https://github.com/reppohopper/gas_hacks#readme
  */
+
 // general apps script module code accessible at ...
 // https://github.com/reppohopper/gas_hacks/blob/main/json_files_module.js
 
@@ -32,4 +33,7 @@ const json_files = (function json_files_module_loader () {
       JSON.stringify(js_object, replacer, space)
     );
   }
-}());
+
+  return exp; // Export the exports. 
+}()); // Close module. 
+//        |         |         |         |         |         |         |         |(80)
