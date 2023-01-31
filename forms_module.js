@@ -16,6 +16,9 @@
  * DOCUMENTATION: https://github.com/reppohopper/gas_hacks#readme 
  */
 
+// general apps script module code accessible at ...
+// https://github.com/reppohopper/gas_hacks/blob/main/forms_module.js
+
 //        |         |         |         |         |         |         |         |(80)
 const forms = (function forms_module_loader () {
   const exp = {};
